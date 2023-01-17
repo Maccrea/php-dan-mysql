@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Form Guestbook</title>
+<style type="text/css">
+<!--
+TABLE {
+background-color:#33FFCC;
+border-style:solid;
+border-width:1px;
+border-color:#0033FF;
+}
+INPUT,TEXTAREA {
+background-color:#00FFFF;
+border-style:solid;
+border-width: 1px;   
+}
+.style1 {color: #99CCFF}
+-->
+</style>
+</head>
+
+<body>
+<form name="form1" method="post" action="simpan_guestbook.php">
+  <table width="383" border="0" cellpadding="0" cellspacing="3">
+    <tr align="left" bgcolor="#66FF00">
+      <th colspan="2" scope="col">Form Guestbook </th>
+    </tr>
+    <tr>
+      <td width="92">&nbsp;</td>
+      <td width="291">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Nama</td>
+      <td><input name="fm_nama" type="text" id="fm_nama" size="25" maxlength="25"></td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><input name="fm_email" type="text" id="fm_email" size="25" maxlength="25"></td>
+    </tr>
+    <tr>
+      <td>  </td>
+      <td><textarea name="fm_pesan" cols="35" rows="4" id="fm_pesan"></textarea></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="submit" name="Submit" value=" Simpan "></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
