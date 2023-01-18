@@ -30,7 +30,7 @@ else
 {
 	$indo="Sabtu";
 }
-echo "<b>Tanggal Serakang : $indo,$tanggal </b>";
+echo "<b>Tanggal Sekarang : $indo,$tanggal </b>";
 
 
 ?>
