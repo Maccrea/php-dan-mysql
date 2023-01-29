@@ -13,22 +13,23 @@ else if(empty($fm_email)) {
 }
 else if(empty($fm_pesan)) { 
 	echo " Pesan harus diisi, silahkan dilengkapi"; 
-}
-else {
+} else 
+{
 	// Jika validasi lolos
-	$tanggal=date('Y-m-d');
-	
+	$tanggal = date('Y-m-d');
+
 	// Konek ke MySQL
-	mysql_connect("localhost","root","") or die ("Tidak terhubung ke server");
-	
+	mysql_connect("localhost", "root", "") or die("Tidak terhubung ke server");
+
 	// Membaca database
-	mysql_select_db("trik") or die ("database tidak ada");
-	
+	mysql_select_db("trik") or die("database tidak ada");
+
 	// Perintah SQL menyimpan data 
 	mysql_query("INSERT INTO guestbook (nama,email,pesan,tanggal)
 			VALUES ('$fm_nama','$fm_email','$fm_pesan','$tanggal')");
-			
+
 	echo "Data telah tersimpan";
-	
+
 	include "tampil_guestbook.php";
+}
 ?>
